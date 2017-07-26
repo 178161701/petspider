@@ -1,0 +1,1213 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>HTML教程_w3cschool</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="keywords" content="HTML教程" />
+<meta name="description" content="HTML 指超文本标签语言。
+HTML 是通向 WEB 技术世界的钥匙。
+在 W3CSchool 的 HTML 教程中，您将学习如何使用 HTML 来创建站点。
+HTML 非常容易学习！你会喜欢它的！_来自HTML教程，w3cschool。" />
+<link href="//www.w3cschool.cn/statics/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" href="//www.w3cschool.cn/statics/css/w3.css" />
+<link rel="stylesheet" href="//www.w3cschool.cn/statics/css/style-kn-project-view.css" type="text/css" />
+<link rel="stylesheet" href="//www.w3cschool.cn/statics/css/style-theme.css" type="text/css" />
+<link rel="stylesheet" href="//www.w3cschool.cn/statics/css/project.css" />
+<link href="//www.w3cschool.cn/plugins/highlight/styles/default.css" rel="stylesheet" type="text/css"/>
+<script src="//www.w3cschool.cn/plugins/highlight/highlight.pack.js" type="text/javascript"></script>
+<link rel="shortcut icon" href="//www.w3cschool.cn/statics/images/favicon.ico"/>
+<script src="//www.w3cschool.cn/statics/js/jquery-1.8.3.min.js" type="text/javascript"></script>
+<script src="//www.w3cschool.cn/statics/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+<script src="//www.w3cschool.cn/statics/js/project.leftbox.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="full-height-container" class="project-container color-theme-white">
+<!--header start--> 
+<div id="header">
+<div id="header_item">
+<div id="header_index">
+<div id="header-l">
+<a href="//www.w3cschool.cn" title="w3cschool" class="logo"><img src="//statics.w3cschool.cn/images/w3c/header-logo.png" alt="W3Cschool" /></a>
+<ul class="header-menu">
+<li><a href="//www.w3cschool.cn/tutorial" title="编程入门教程">编程入门教程</a></li>
+<li><a href="//www.w3cschool.cn/manual" title="开源技术文档">极客文档</a></li>
+<li class="dropdown"><a href="#" class="dropbtn">学院<i class="down-icon1 angle-down-icon"></i></a>
+<div class="dropdown-content">
+<a href="//www.w3cschool.cn/codecamp/" title="编程实战训练">编程实战训练</a>
+<a href="//www.w3cschool.cn/examples" title="编程实例">编程实例</a>
+<a href="//www.w3cschool.cn/exam/" title="编程题库">编程题库</a>
+<a href="//www.w3cschool.cn/question/" title="编程问答">编程问答</a>
+<a href="//www.w3cschool.cn/codedemo" title="代码实例">代码实例</a>
+</div> 
+</li>
+<li class="dropdown"><a href="#" class="dropbtn">百宝箱<i class="down-icon1 angle-down-icon"></i></a>
+<div class="dropdown-content">
+<a href="//123.w3cschool.cn/webtools" target="_blank" title="W3Cschool在线工具集合">在线工具</a>
+<a href="//123.w3cschool.cn" target="_blank" title="W3Cschool极客导航">极客导航</a>
+<a href="//www.w3cschool.cn/dict/" title="速查词典">速查词典</a>
+<a href="//www.w3cschool.cn/group/" title="群组">群组</a>
+<a href="//www.w3cschool.cn/position/positionlist" title="职位进阶">职位进阶</a>
+<a href="//www.w3cschool.cn/popularuser" title="排行榜">排行榜</a>
+</div> 
+</li>
+<li><a href="//www.w3cschool.cn/vip" title="会员">会员<i class="new-icon"></i></a></li>
+</ul>
+</div>
+<div id="header-r">
+<div class="sig-box" >
+<a href="/register?refer=/" rel="nofollow">注册</a><!-- href="/register?refer=/" --> | 
+<a href="/login?refer=/" rel="nofollow">登录</a>
+</div>
+<a href="//www.w3cschool.cn/download" target="_blank" class="header-app">下载</a>
+<a class="create-btn" href="javascript:;" >+ 发布</a>
+<a style="display: none;" id="loadNav" href="/my/knowledge/addkn" target="dialog" loaddo="addkn" rel="quick-add" mask="true" height="430" width="720" class="btn btn-default"><i class="icon-plus"></i> 发布</a>
+<div class="searchbox">
+<form action="/search" target="_self">
+<input type="text" name="w" class="box" id="searched_content" placeholder="输入关键字搜索..."/>
+<button type="submit" class="button"/></button>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="register-Box" id="register-Box" style="display: none;">
+<div class="register-Box-content">
+<div class="register-Box-top">
+<span class="register-Box-title">注册成功</span>
+<span onclick="closeDialogBox(this)" class="feedback-Box-close">X</span>
+</div>
+<div class="register-Box-info">
+<div class="register-Box-left" style="float: left;">
+<img class="register-cover" src="//img.w3cschool.cn/attachments/avatar/avatar_c383542045.jpg">
+</div>
+<div class="register-Box-right">
+
+<p class="register-userinfo-title">
+<i class="usertype-ico-1"></i><span>W3Cschool</span>
+</p>
+<p class="register-userinfo-info">恭喜您成为首批注册用户</p>
+<p class="register-userinfo-info">获得88经验值奖励</p>
+<button class="search-s" onclick="closeDialogBox(this)" id="registerSubmit">马上体验</button>
+</div>
+</div>
+</div>
+</div>
+<script>
+var apppath = '/html';
+var domain  = '//www.w3cschool.cn';
+</script>
+<!--header end-->
+<div id="m-splitter">
+<div class="m-splitter-left left-container">
+<div class="fixed-sidebar mscroller" style="width:100%;">
+<div class="splitter-sidebar">
+<div class="sidebar-space-info">
+<a href="/html" title="HTML教程">
+<div class="sidebar-pro-wrapper">
+<div class="sidebar-pro-container">
+<div class="sidebar-pro-img">
+<span><img class="pimg-cover" alt="HTML教程" src="/attachments/cover/cover_html.png?t=1487226843"></span>
+</div>
+</div>
+</div>
+<div class="pro-name-container">
+<div class="sidebar-pro-name">
+<span>HTML教程</span>
+</div>
+</div>
+</a>
+</div>
+<div class="sidebar-pro-nav">
+<ul class="page-sidebar-menu">
+<li class="pro-m">
+<a class="btn-thumbs-up" href="javascript:;" onclick="isProjectLike()" >
+<i class="icon-thumbs-up"></i> <span id="likestatus">赞</span>
+</a>
+</li>
+<li class="pro-m">
+<a id="hbstar" href="javascript:;" onclick="isProjectStar()" data-type="star"><i class="icon-star"></i> <span>收藏</span></a>
+</li>
+<li class="pro-m">
+<a href="javascript:;" title="分享" class="share-btn  popup_more bdsharebuttonbox" data-cmd="more" data-bd-bind="1472196006351"><i class="icon-share"></i> 分享</a>
+</li>
+</ul>
+</div>
+<div class="sidebar-menu">
+<ul>    
+<li class="nav-item"><a href="/html/list/" title="wiki列表"><i class="icon-bookmark-empty"></i> <span class="nav-item-label">Wiki列表</span></a></li>                     
+<li class="nav-item"><a href="/html/topic" target="_blank" title="html问答讨论区"><i class="icon-question-sign"></i> <span class="nav-item-label">html问答讨论区</span></a></li></ul>
+</div>
+<!--左侧栏导航 start-->
+<div class="sidebar-nav">
+<ul class="treeth">
+<li class="active" target="sidebar-tree-content"><a href="javascript:;" class="text" title="目录"><i class="icon icon-th-list"></i> <span class="title">目录</span></a></li>
+<li class="" target="search-box"><a href="javascript:;" class="text" title="搜索"><i class="icon icon-search"></i> <span class="title">搜索</span></a></li>
+<li target="stars-box"><a href="javascript:;" class="text" title="收藏"><i class="icon icon-heart"></i> <span class="title">收藏</span></a></li>
+</ul>
+</div>
+<!--左侧栏导航 end-->
+<div style="clear:both"></div>
+<div class="sidebar-content">                                          
+<div class="sidebar-tree">
+<div class="sidebar-tree-content">
+<div class="dd" id="nestable_handbook" data-tid="" data-id="handbook">
+<ol class="dd-list">
+<li class="dd-item" data-id="241bxf21">
+<div class="dd-content folder-open ">
+<i class="folder icon-folder-open"></i>
+                                 
+<a   title="HTML 教程">HTML 教程</a>
+</div>
+<ol class="dd-list">
+                          
+<li class="dd-item" data-id="html-tutorial">
+<div class="dd-content  ">
+<i class="ic-folder-open2"></i>
+                                 
+<a  href="/html/html-tutorial.html" title="HTML 教程导读">HTML 教程导读</a>
+</div>
+</li>
+                          
+<li class="dd-item" data-id="html-intro">
+<div class="dd-content  ">
+<i class="ic-folder-open2"></i>
+                                 
+<a  href="/html/html-intro.html" title="HTML 简介">HTML 简介</a>
+</div>
+</li>
+                          
+<li class="dd-item" data-id="html-editors">
+<div class="dd-content  ">
+<i class="ic-folder-open2"></i>
+                                 
+<a  href="/html/html-editors.html" title="HTML 编辑器的介绍及推荐">HTML 编辑器</a>
+</div>
+</li>
+                          
+<li class="dd-item" data-id="html-basic">
+<div class="dd-content  ">
+<i class="ic-folder-open2"></i>
+                                 
+<a  href="/html/html-basic.html" title="HTML 基础">HTML 基础</a>
+</div>
+</li>
+                          
+<li class="dd-item" data-id="html-elements">
+<div class="dd-content  ">
+<i class="ic-folder-open2"></i>
+                                 
+<a  href="/html/html-elements.html" title="HTML 元素">HTML 元素</a>
+</div>
+</li>
+                          
+<li class="dd-item" data-id="html-attributes">
+<div class="dd-content  ">
+<i class="ic-folder-open2"></i>
+                                 
+<a  href="/html/html-attributes.html" title="HTML 属性">HTML 属性</a>
+</div>
+</li>
+                          
+<li class="dd-item" data-id="html-heading">
+<div class="dd-content  ">
+<i class="ic-folder-open2"></i>
+                                 
+<a  href="/html/html-heading.html" title="HTML 标题">HTML 标题</a>
+</div>
+</li>
+                          
+<li class="dd-item" data-id="html-paragraphs">
+<div class="dd-content  ">
+<i class="ic-folder-open2"></i>
+                                 
+<a  href="/html/html-paragraphs.html" title="HTML 段落">HTML 段落</a>
+</div>
+</li>
+                          
+<li class="dd-item" data-id="html-formatting">
+<div class="dd-content  ">
+<i class="ic-folder-open2"></i>
+                                 
+<a  href="/html/html-formatting.html" title="HTML 文本格式化">HTML 文本格式化</a>
+</div>
+</li>
+                          
+<li class="dd-item" data-id="html-links">
+<div class="dd-content  ">
+<i class="ic-folder-open2"></i>
+                                 
+<a  href="/html/html-links.html" title="HTML 链接">HTML 链接</a>
+</div>
+</li>
+                          
+<li class="dd-item" data-id="html-head">
+<div class="dd-content  ">
+<i class="ic-folder-open2"></i>
+                                 
+<a  href="/html/html-head.html" title="HTML 头部">HTML 头部</a>
+</div>
+</li>
+                          
+<li class="dd-item" data-id="html-css">
+<div class="dd-content  ">
+<i class="ic-folder-open2"></i>
+                                 
+<a  href="/html/html-css.html" title="HTML CSS百科及常用嵌入方式">HTML CSS</a>
+</div>
+</li>
+                          
+<li class="dd-item" data-id="html-images">
+<div class="dd-content  ">
+<i class="ic-folder-open2"></i>
+                                 
+<a  href="/html/html-images.html" title="HTML 图像">HTML 图像</a>
+</div>
+</li>
+                          
+<li class="dd-item" data-id="html-tables">
+<div class="dd-content  ">
+<i class="ic-folder-open2"></i>
+                                 
+<a  href="/html/html-tables.html" title="HTML 表格">HTML 表格</a>
+</div>
+</li>
+                          
+<li class="dd-item" data-id="html-lists">
+<div class="dd-content  ">
+<i class="ic-folder-open2"></i>
+                                 
+<a  href="/html/html-lists.html" title="HTML 列表">HTML 列表</a>
+</div>
+</li>
+                          
+<li class="dd-item" data-id="html-blocks">
+<div class="dd-content  ">
+<i class="ic-folder-open2"></i>
+                                 
+<a  href="/html/html-blocks.html" title="HTML 区块">HTML 区块</a>
+</div>
+</li>
+                          
+<li class="dd-item" data-id="html-layouts">
+<div class="dd-content  ">
+<i class="ic-folder-open2"></i>
+                                 
+<a  href="/html/html-layouts.html" title="HTML 布局">HTML 布局</a>
+</div>
+</li>
+                          
+<li class="dd-item" data-id="html-form">
+<div class="dd-content  ">
+<i class="ic-folder-open2"></i>
+                                 
+<a  href="/html/html-form.html" title="HTML 表单">HTML 表单</a>
+</div>
+</li>
+                          
+<li class="dd-item" data-id="html-iframes">
+<div class="dd-content  ">
+<i class="ic-folder-open2"></i>
+                                 
+<a  href="/html/html-iframes.html" title="HTML 框架">HTML 框架</a>
+</div>
+</li>
+                          
+<li class="dd-item" data-id="html-colors">
+<div class="dd-content  ">
+<i class="ic-folder-open2"></i>
+                                 
+<a  href="/html/html-colors.html" title="HTML 颜色">HTML 颜色</a>
+</div>
+</li>
+                          
+<li class="dd-item" data-id="html-colornames">
+<div class="dd-content  ">
+<i class="ic-folder-open2"></i>
+                                 
+<a  href="/html/html-colornames.html" title="HTML 颜色名">HTML 颜色名</a>
+</div>
+</li>
+                          
+<li class="dd-item" data-id="html-colorvalues">
+<div class="dd-content  ">
+<i class="ic-folder-open2"></i>
+                                 
+<a  href="/html/html-colorvalues.html" title="HTML 颜色值">HTML 颜色值</a>
+</div>
+</li>
+                          
+<li class="dd-item" data-id="html-scripts">
+<div class="dd-content  ">
+<i class="ic-folder-open2"></i>
+                                 
+<a  href="/html/html-scripts.html" title="HTML 脚本">HTML 脚本</a>
+</div>
+</li>
+                          
+<li class="dd-item" data-id="html-entities">
+<div class="dd-content  ">
+<i class="ic-folder-open2"></i>
+                                 
+<a  href="/html/html-entities.html" title="HTML 字符实体">HTML 字符实体</a>
+</div>
+</li>
+                          
+<li class="dd-item" data-id="html-url">
+<div class="dd-content  ">
+<i class="ic-folder-open2"></i>
+                                 
+<a  href="/html/html-url.html" title="HTML URL">HTML URL</a>
+</div>
+</li>
+                          
+<li class="dd-item" data-id="html-quicklist">
+<div class="dd-content  ">
+<i class="ic-folder-open2"></i>
+                                 
+<a  href="/html/html-quicklist.html" title="HTML 速查列表">HTML 速查列表</a>
+</div>
+</li>
+                          
+<li class="dd-item" data-id="html-summary">
+<div class="dd-content  ">
+<i class="ic-folder-open2"></i>
+                                 
+<a  href="/html/html-summary.html" title="HTML 总结">HTML 总结</a>
+</div>
+</li>
+ 
+</ol></li>  
+                          
+<li class="dd-item" data-id="9odg1ptd">
+<div class="dd-content folder-open ">
+<i class="folder icon-folder-open"></i>
+                                 
+<a   title="HTML XHTML">HTML XHTML</a>
+</div>
+<ol class="dd-list">
+                          
+<li class="dd-item" data-id="html-xhtml">
+<div class="dd-content  ">
+<i class="ic-folder-open2"></i>
+                                 
+<a  href="/html/html-xhtml.html" title="XHTML 简介">XHTML 简介</a>
+</div>
+</li>
+ 
+</ol></li>  
+                          
+<li class="dd-item" data-id="1pdjxf21">
+<div class="dd-content folder-open ">
+<i class="folder icon-folder-open"></i>
+                                 
+<a   title="HTML 媒体">HTML 媒体</a>
+</div>
+<ol class="dd-list">
+                          
+<li class="dd-item" data-id="html-media">
+<div class="dd-content  ">
+<i class="ic-folder-open2"></i>
+                                 
+<a  href="/html/html-media.html" title="HTML 媒体(Media)">HTML 媒体(Media)</a>
+</div>
+</li>
+                          
+<li class="dd-item" data-id="html-object">
+<div class="dd-content  ">
+<i class="ic-folder-open2"></i>
+                                 
+<a  href="/html/html-object.html" title="HTML 插件">HTML 插件</a>
+</div>
+</li>
+                          
+<li class="dd-item" data-id="html-sounds">
+<div class="dd-content  ">
+<i class="ic-folder-open2"></i>
+                                 
+<a  href="/html/html-sounds.html" title="HTML 音频(Audio)">HTML 音频(Audio)</a>
+</div>
+</li>
+                          
+<li class="dd-item" data-id="html-videos">
+<div class="dd-content  ">
+<i class="ic-folder-open2"></i>
+                                 
+<a  href="/html/html-videos.html" title="HTML 视频(Videos)播放">HTML 视频(Videos)播放</a>
+</div>
+</li>
+                          
+<li class="dd-item" data-id="html-examples">
+<div class="dd-content  ">
+<i class="ic-folder-open2"></i>
+                                 
+<a  href="/html/html-examples.html" title="HTML 实例">HTML 实例</a>
+</div>
+</li>
+ 
+</ol></li>  
+                          
+<li class="dd-item" data-id="y12r1210">
+<div class="dd-content folder-open ">
+<i class="folder icon-folder-open"></i>
+                                 
+<a   title="HTML 实例/测验">HTML 实例/测验</a>
+</div>
+<ol class="dd-list">
+                          
+<li class="dd-item" data-id="html-html_examples">
+<div class="dd-content  ">
+<i class="ic-folder-open2"></i>
+                                 
+<a  href="/html/html-html_examples.html" title="HTML 实例">HTML 实例</a>
+</div>
+</li>
+                          
+<li class="dd-item" data-id="html-html_quiz">
+<div class="dd-content  ">
+<i class="ic-folder-open2"></i>
+                                 
+<a  href="/html/html-html_quiz.html" title="HTML 测验">HTML 测验</a>
+</div>
+</li>
+                          
+<li class="dd-item" data-id="html-codecamp">
+<div class="dd-content  ">
+<i class="ic-folder-open2"></i>
+                                 
+<a  href="/html/html-codecamp.html" title="HTML 编程实战闯关">HTML 编程实战闯关</a>
+</div>
+</li>
+ 
+</ol></li>  
+                          
+<li class="dd-item" data-id="html-fj7r22x9">
+<div class="dd-content folder-open ">
+<i class="folder icon-folder-open"></i>
+                                 
+<a   title="HTML 相关教程">HTML 相关教程</a>
+</div>
+<ol class="dd-list">
+                          
+<li class="dd-item" data-id="html-brge22wl">
+<div class="dd-content  ">
+<i class="ic-folder-open2"></i>
+                                 
+<a  href="https://www.w3cschool.cn/html/html-css-index.html" title="HTML 入门教程">HTML 入门教程</a>
+</div>
+</li>
+ 
+</ol></li>  
+                          
+<li class="dd-item" data-id="4flh1s7s">
+<div class="dd-content folder-open ">
+<i class="folder icon-folder-open"></i>
+                                 
+<a   title="HTML 拓展阅读">HTML 拓展阅读</a>
+</div>
+<ol class="dd-list">
+                          
+<li class="dd-item" data-id="html-space">
+<div class="dd-content  ">
+<i class="ic-folder-open2"></i>
+                                 
+<a  href="/html/html-space.html" title="HTML中如何键入空格">HTML中如何键入空格</a>
+</div>
+</li>
+                          
+<li class="dd-item" data-id="html-code">
+<div class="dd-content  ">
+<i class="ic-folder-open2"></i>
+                                 
+<a  href="/html/html-code.html" title="程序员必须知道的HTML常用代码有哪些？">HTML常用代码</a>
+</div>
+</li>
+                          
+<li class="dd-item" data-id="html-Label">
+<div class="dd-content  ">
+<i class="ic-folder-open2"></i>
+                                 
+<a  href="/html/html-Label.html" title="全方位详解HTML常用标签">HTML常用标签</a>
+</div>
+</li>
+                          
+<li class="dd-item" data-id="html-template">
+<div class="dd-content  ">
+<i class="ic-folder-open2"></i>
+                                 
+<a  href="/html/html-template.html" title="精选多个程序员都想要的免费HTML模板下载">HTML模板下载</a>
+</div>
+</li>
+                          
+<li class="dd-item" data-id="html-textbox">
+<div class="dd-content  ">
+<i class="ic-folder-open2"></i>
+                                 
+<a  href="/html/html-textbox.html" title="HTML文本框参考样式及常见操作技巧大全">HTML文本框样式</a>
+</div>
+</li>
+                          
+<li class="dd-item" data-id="html-scrollbar">
+<div class="dd-content  ">
+<i class="ic-folder-open2"></i>
+                                 
+<a  href="/html/html-scrollbar.html" title="HTML滚动条样式代码及使用技巧">HTML滚动条样式</a>
+</div>
+</li>
+                          
+<li class="dd-item" data-id="html-copyright">
+<div class="dd-content  ">
+<i class="ic-folder-open2"></i>
+                                 
+<a  href="/html/html-copyright.html" title="HTML版权符号写法及美化">HTML版权符号写法</a>
+</div>
+</li>
+                          
+<li class="dd-item" data-id="html-cui11xk2">
+<div class="dd-content  ">
+<i class="ic-folder-open2"></i>
+                                 
+<a  href="/html/html-cui11xk2.html" title="HTML元素嵌套嵌套错误可能引起的问题">HTML元素嵌套问题</a>
+</div>
+</li>
+ 
+</ol></li>  
+                          
+</ol>
+</div>  
+</div>                                
+<!--  sidebar-tree-content end  -->
+<div class="search-box hide1">
+<div id="knsearch" class="tab-pane">
+<div class="knsearch-input">
+<input type="text" placeholder="搜索手册内容" name="w" class="input-s">
+<button class="knsearchbtn">搜索</button>
+<!--<button class="kncleanbtn">清空</button>-->
+</div>                    
+<div class="searchres">
+</div>
+<div class="sidebar-tree-dict"></div>
+</div>
+</div>
+<div class="stars-box hide1">                  
+<div id="kncollect" class="tab-pane">
+<ul class="dd-list">
+<li class="nostar">请登录查看</li>
+</ul>
+</div>
+</div>
+</div>                    
+</div>
+</div>
+<!-- <div class="space-tools-section">
+<div class="tools-button">
+<a href="" class="expand-collapse-trigger"></a>
+</div>
+</div> -->
+</div>
+</div>
+<div class="splitter-handle left-drager">
+<div class="left-dragger-c splitter-handle-highlight"></div>
+</div>
+<div id="pro-mian" class="main-container font0" >
+<div class="portlet-title pro-title">
+<div class="set-btn-group font-settings pull-left">
+<a href="#" class="expand-collapse-trigger" title="折叠/展开"><i class="icon-th-list"></i></a>
+<a href="#" class="toggle-dropdown" title="视觉主题设置"><i class="icon-font"></i></a>
+<div class="set-dropdown-menu docblur" style="display:none;">
+<div class="dropdown-caret">
+<span class="caret-outer"></span>
+<span class="caret-inner"></span>
+</div>
+<div class="buttons font-opt">
+<button class="button size font-reduce" font="reduce" title="缩小字体">A</button>
+<button class="button size font-enlarge" font="enlarge" title="放大字体">A</button>
+</div>
+<div class="buttons bg-color">
+<button class="button theme" color="color-theme-white" title="日间模式">White</button>
+<button class="button theme" color="color-theme-sepia" title="护眼模式">Sepia</button>
+<button class="button theme" color="color-theme-night" title="夜间模式">Night</button>
+</div>
+</div>
+</div>
+</div>
+<div class="project-cover">
+<div id="pcover" cover="cover" metakey="" metadesc="" >
+<div class="portlet">
+<div class="coverimg">
+<a href="//www.w3cschool.cn/html" title="HTML教程">                
+<img class="pimgcover" src="/attachments/cover/cover_html.png?t=1487226843" width="150" height="150" alt="HTML教程"/>
+</a>
+</div>
+<div class="coverinfo">
+<h1>HTML教程</h1>
+<div class="creatorarea">
+<a href="/u/2" target="_blank">
+<img class="pavatar" src="/attachments/avatar/avatar_youj.jpg" /> 
+youj</a>
+</div>
+<div class="coverinfo-desc">
+<div class="content-btn-group">
+<span id="content-head-viewcount" class="content-head-viewcount"><i class="icon-eye-open"></i> <span>阅读(8183.7k)</span></span>
+<a id="hbstar" href="javascript:;" onclick="isProjectStar()" data-type="star"><i class="icon-star"></i> <span>收藏</span></a>
+<a class="btn-thumbs-up" href="javascript:;" onclick="isProjectLike()"><i class="icon-thumbs-up"></i> <span id="likestatus">赞</span>(<span id="likecount">507</span>)</a>
+<a href="javascript:;" title="分享" class="share-btn popup_more bdsharebuttonbox " data-cmd="more" ><i class="icon-share"></i> 分享</a>
+</div>
+</div>
+</div>
+</div>
+<div class="project-desc content-intro">
+<div class="note note-info">
+<h2>多端阅读《HTML教程》:</h2>
+<ul>
+<li><b>在PC/MAC上查看：</b>下载w3cschool客户端，进入客户端后通过搜索当前教程手册的名称并下载，就可以查看当前离线教程文档。<a href="//www.w3cschool.cn/download/" target="_blank" title="下载w3cschool离线版">下载w3cschool离线版客户端</a></li>
+<li><b>在手机APP上查看：</b>请从各大安卓应用商店、苹果App Store搜索并下载w3cschool手机客户端，在App中搜索当前教程手册的名称查看。<a href="//www.w3cschool.cn/download/" target="_blank" title="下载w3cschool手机版">下载w3cschool手机App端</a></li>
+<li><b>在手机上查看文档：</b><a href="//m.w3cschool.cn/html/" target="_blank" title="HTML教程">https://m.w3cschool.cn/html/</a></li>
+</ul>
+</div>
+<h2>手册简介:</h2>
+<p>HTML 指超文本标签语言。
+HTML 是通向 WEB 技术世界的钥匙。
+在 W3CSchool 的 HTML 教程中，您将学习如何使用 HTML 来创建站点。
+HTML 非常容易学习！你会喜欢它的！</p>
+</div>
+<div class="project-desc content-intro">
+<h2 class="project-desc-title"><i class="icon-reorder"></i>手册说明:</h2>
+<div class="project-desc-content">
+<p>HTML是现在世界通用的超文本标记语言，通过它，可以实现图片、链接、音乐以及程序等等多种元素。现如今，HTML已经是程序员必须掌握的一项基本功。&nbsp;</p><p style="text-align: center; "><img src="/attachments/image/20170526/1495798408306247.jpg" alt="1477036444719391"><br></p><h2>HTML发展史</h2><p>HTML没有1.0，因为关于它的初版存在争议，1995年HTML 2.0面世，1997年由国际官方组织W3C推出了HTML 3.2以及HTML 4.0标准，后面W3C(万维网联盟)也渐渐变成Web技术领域的权威，经过漫长的演变，2014年，HTML 5标准最终面世。</p><p>HTML 2.0——1995年11月，RFC 1866发布</p><p>HTML 3.2——1997年1月14日，W3C发布推荐标准</p><p>HTML 4.0——1997年12月18日，W3C<span style="line-height: 1.7;">发布</span><span style="line-height: 1.7;">推荐标准</span></p><p>HTML 4.01——1999年12月24日，W3C<span style="line-height: 1.7;">发布</span><span style="line-height: 1.7;">推荐标准</span></p><p>HTML 5——2014年10月28日，W3C<span style="line-height: 1.7;">发布</span><span style="line-height: 1.7;">推荐标准</span></p><h2>HTML结构</h2><p>HTML的结构一般包括&lt;head&gt;标签和&lt;body&gt;标签，&lt;head&gt;&lt;/head&gt;这2个标记符分别表示网页的头部和正文。头部中可包含页面的标题、关键词、描述说明等内容，它本身不作为内容来显示，但影响网页显示的效果。&lt;body&gt;&lt;/body&gt;当中是网页实际显示的内容，正文标记符又被称为实体标记。页面当中通常包含有很多指向其他相关页面或其他节点的指针，通过点击，可以很方便地获取新的网页，这是HTML获得广泛推广运用最重要的原因之一，而由这些相互之间存在关联的页面组成的有机集合便是网站。</p><p>究竟HTML为什么会被普及?这就要归功于互联网的高速发展，对于编程语言的需求直线上升。而HTML5具有超集方式的简易性、运用广泛的可拓展性、灵活应变的平台适应性以及简单的通用性。凭借着这些特性，HTML越来越受到人们的喜爱。</p><h2>HTML5编辑规范</h2><p>1、文件拓展名默认使用htm，便于操作系统或者程序辨认文件，而图片则基本上存为gif或jpg</p><p>2、浏览器默认忽视回车符，不过为了方便阅览，人们还是会习惯地在写完一段代码后进行回车</p><p>3、标记符号用尖括号括起来，带斜杠的元素表示该标记说明结束，大多数标记符必须成对使用，用以说明起始和结束。</p><p>4、必须使用半角而不是全角字符</p><p>5、HTML注释&lt;!--注释内容--&gt;的内容不给予显示。</p><h2>除了这本手册，你还可以参考</h2><p><a href="//www.w3cschool.cn/wzjszn/web-validate.html" target="_blank">《HTML验证》</a></p><p><a href="//www.w3cschool.cn/html/html-html_examples.html" target="_blank">《HTML实例》</a></p><p><a href="//www.w3cschool.cn/html/html-html_quiz.html" target="_blank">《HTML测验》</a></p><p><a href="//www.w3cschool.cn/codecamp/list?ccid=2" target="_blank">《HTML实战》</a></p><p><a href="//www.w3cschool.cn/htmltags/index.html" target="_blank">《HTML参考手册》</a></p><h2>开始学习HTML</h2><p>接下来，你可以打开这本教程，先了解html的基本概念，然后一个一个地掌握<a href="//www.w3cschool.cn/htmltags/tag-a.html" target="_blank">HTML标签</a>、<a href="//www.w3cschool.cn/webdevelopment/rezj1jsl.html" target="_blank">HTML语法</a>、<a href="//www.w3cschool.cn/htmltags/tag-comment.html" target="_blank">HTML注释</a>、<a href="//www.w3cschool.cn/htmltags/tag-frame.html" target="_blank">HTML框架</a>的用法，并且参考借鉴一些优秀的网站，通过浏览器的“查看源代码”功能来了解别人写的HTML代码结构。</p><p>HTML对于系统环境配置要求一点也不高，基本上，你只需要有一台电脑就够了。</p><h2>HTML相关教程</h2><p><a target="_blank" href="//www.w3cschool.cn/html/html-css-index.html">《HTML入门教程》</a>     <br></p><p>    <br></p></div>
+</div>
+<div class="project-desc2">
+<h3><i class="icon-reorder"></i>更新记录：</h3>
+<ul class="portlet-body">
+<li class="logrow">
+<div class="loginfo">
+<a href="/html/html-code.html" title="程序员必须知道的HTML常用代码有哪些？"><i class="icons-img icons-artile"></i>程序员必须知道的HTML常用代码有哪些？</a>
+<span class="logtime">07-20 17:45</span>
+</div>
+</li>
+<li class="logrow">
+<div class="loginfo">
+<a href="/html/html-xhtml.html" title="XHTML 简介"><i class="icons-img icons-artile"></i>XHTML 简介</a>
+<span class="logtime">07-19 15:45</span>
+</div>
+</li>
+<li class="logrow">
+<div class="loginfo">
+<a href="/html/html-Label.html" title="全方位详解HTML常用标签"><i class="icons-img icons-artile"></i>全方位详解HTML常用标签</a>
+<span class="logtime">07-11 18:24</span>
+</div>
+</li>
+<li class="logrow">
+<div class="loginfo">
+<a href="/html/html-lists.html" title="HTML 列表"><i class="icons-img icons-artile"></i>HTML 列表</a>
+<span class="logtime">07-11 15:26</span>
+</div>
+</li>
+<li class="logrow">
+<div class="loginfo">
+<a href="/html/html-links.html" title="HTML 链接"><i class="icons-img icons-artile"></i>HTML 链接</a>
+<span class="logtime">07-11 14:00</span>
+</div>
+</li>
+<li class="logrow">
+<div class="loginfo">
+<a href="/html/html-intro.html" title="HTML 简介"><i class="icons-img icons-artile"></i>HTML 简介</a>
+<span class="logtime">07-05 20:07</span>
+</div>
+</li>
+<li class="logrow">
+<div class="loginfo">
+<a href="/html/html-form.html" title="HTML 表单"><i class="icons-img icons-artile"></i>HTML 表单</a>
+<span class="logtime">06-29 17:43</span>
+</div>
+</li>
+<li class="logrow">
+<div class="loginfo">
+<a href="/html/html-url.html" title="HTML URL"><i class="icons-img icons-artile"></i>HTML URL</a>
+<span class="logtime">06-29 17:18</span>
+</div>
+</li>
+<li class="logrow">
+<div class="loginfo">
+<a href="/html/html-space.html" title="HTML中如何键入空格"><i class="icons-img icons-artile"></i>HTML中如何键入空格</a>
+<span class="logtime">06-27 15:23</span>
+</div>
+</li>
+<li class="logrow">
+<div class="loginfo">
+<a href="/html/html-template.html" title="精选多个程序员都想要的免费HTML模板下载"><i class="icons-img icons-artile"></i>精选多个程序员都想要的免费HTML模板下载</a>
+<span class="logtime">06-27 15:21</span>
+</div>
+</li>
+</ul>
+</div>
+<div class="project-desc2">
+<h3>
+<i class="icon-reorder"></i>常见问题：
+<a href="/html/topic" target="_blank" class="ask-btn">更多 »</a>
+</h3>
+<ul class="portlet-body">
+<li class="logrow">
+<div class="loginfo">
+<a href="/html/question-10231638.html" title="大家好！求解答一下我这一小段代码，我为什么实现不了居右的效果？"><i class="icons-img icons-question"></i>大家好！求解答一下我这一小段代码，我为什么实现不了居右的效果？</a>
+<span class="answercount">回答(11)</span>
+</div>
+</li>
+<li class="logrow">
+<div class="loginfo">
+<a href="/html/question-10231673.html" title="html直接键入多个空格为什么只能显示一个空格占位？"><i class="icons-img icons-question"></i>html直接键入多个空格为什么只能显示一个空格占位？</a>
+<span class="answercount">回答(6)</span>
+</div>
+</li>
+<li class="logrow">
+<div class="loginfo">
+<a href="/html/question-10231585.html" title="在HTML中，要想输入多行文本，应该使用什么标记？"><i class="icons-img icons-question"></i>在HTML中，要想输入多行文本，应该使用什么标记？</a>
+<span class="answercount">回答(4)</span>
+</div>
+</li>
+<li class="logrow">
+<div class="loginfo">
+<a href="/html/question-10231594.html" title="table表格怎么样添加滚动条"><i class="icons-img icons-question"></i>table表格怎么样添加滚动条</a>
+<span class="answercount">回答(3)</span>
+</div>
+</li>
+<li class="logrow">
+<div class="loginfo">
+<a href="/html/question-10231351.html" title="在html代码中的&qhsj是什么意思？"><i class="icons-img icons-question"></i>在html代码中的&qhsj是什么意思？</a>
+<span class="answercount">回答(3)</span>
+</div>
+</li>
+<li class="logrow">
+<div class="loginfo">
+<a href="/html/question-10231663.html" title="文字和图片居中的HTML代码怎么写？"><i class="icons-img icons-question"></i>文字和图片居中的HTML代码怎么写？</a>
+<span class="answercount">回答(3)</span>
+</div>
+</li>
+<li class="logrow">
+<div class="loginfo">
+<a href="/html/question-10231665.html" title="html编码常见的有utf-8和gb2312编码等，应该如何判断选择？"><i class="icons-img icons-question"></i>html编码常见的有utf-8和gb2312编码等，应该如何判断选择？</a>
+<span class="answercount">回答(3)</span>
+</div>
+</li>
+<li class="logrow">
+<div class="loginfo">
+<a href="/html/question-10231661.html" title="什么是HTML标签？HTML标签有什么作用？"><i class="icons-img icons-question"></i>什么是HTML标签？HTML标签有什么作用？</a>
+<span class="answercount">回答(2)</span>
+</div>
+</li>
+<li class="logrow">
+<div class="loginfo">
+<a href="/html/question-10231675.html" title="html怎么空行,在html文章段落间空行用什么方法？"><i class="icons-img icons-question"></i>html怎么空行,在html文章段落间空行用什么方法？</a>
+<span class="answercount">回答(2)</span>
+</div>
+</li>
+<li class="logrow">
+<div class="loginfo">
+<a href="/html/question-10231650.html" title="html中如何实现段落首行悬挂？"><i class="icons-img icons-question"></i>html中如何实现段落首行悬挂？</a>
+<span class="answercount">回答(1)</span>
+</div>
+</li>
+</ul>
+</div>
+</div> 
+<div class="right-item">
+<div class="sidebar-box tools-box">
+<div id="course">           
+<h2>扩展栏目</h2>           
+</div>
+<div id="tools">
+<h5 id="tools_3"><a href="/html/topic" target="_blank" title="html问答讨论区">html问答讨论区</a></h5><h5 id="tools_2"><a href="/html/dict" target="_blank" title="html速查词典">html速查词典</a></h5><h5 id="tools_3"><a href="/html5/" target="_blank" title="HTML5教程">HTML5教程</a></h5>
+<h5 id="tools_3"><a href="/htmltags/" target="_blank" title="HTML参考手册">HTML参考手册</a></h5>
+<h5 id="tools_3"><a href="/codecamp/say-hello-to-html-element.html" target="_blank" title="HTML编程入门训练">HTML编程入门训练</a></h5>
+<h5 id="tools_1"><a href="/webide">开发工具IDE</a></h5>         
+<h5 id="tools_3"><a href="/codecamp/">编程训练营</a></h5>    
+<h5 id="tools_1"><a href="/html/list/">Wiki列表</a></h5>
+</div>
+</div>
+<!--竖版广告放置-->
+<div class="abox-item">
+<!--内容页竖版广告开始--> 
+<div class="sidebar-box">
+<div id="course">
+<h2>Advertisement</h2>
+</div>
+<div class="abox">
+<script type="text/javascript">
+/*内容页竖版*/
+var cpro_id = "u2944810";
+</script>
+<script src="//cpro.baidustatic.com/cpro/ui/c.js" type="text/javascript"></script>
+</div>
+</div>
+<!--内容页竖版广告结束--></div>
+<!--分类导航-->
+<!--siderbar_nav start--> 
+<div class="sidebar-box">
+<div id="course">
+<h2>分类导航</h2>
+</div>
+<ul class="nav1">
+<li class="li1">
+<a href="javascript:;">最新推荐</a>
+<ul class="nav2">
+<li class="li2"><a href="//www.w3cschool.cn/freejquery/index.html" title="免费Jquery插件合集">免费Jquery插件合集</a></li>
+<li class="li2"><a href="//www.w3cschool.cn/plk2fi/index.html" title="前端学习资源汇总">前端学习资源汇总</a></li>
+<li class="li2"><a href="//www.w3cschool.cn/wxxcx/index.html" title="微信小程序资源汇总">微信小程序资源汇总</a></li>
+<li class="li2"><a href="//www.w3cschool.cn/smarty/index.html" title="Smarty教程">Smarty教程</a></li>
+<li class="li2"><a href="//www.w3cschool.cn/kfm2f1/index.html" title="SEO基础知识教程">SEO基础知识教程</a></li>
+<li class="li2"><a href="//www.w3cschool.cn/wkspring/index.html" title="Spring 教程">Spring 教程</a></li>
+</ul>
+</li>
+<li class="li1">
+<a href="javascript:;">HTML/CSS</a>
+<ul class="nav2">
+<li class="li2"><a href="//www.w3cschool.cn/html/index.html" title="HTML教程">HTML教程</a></li>
+<li class="li2"><a href="//www.w3cschool.cn/html5/index.html" title="HTML5教程">HTML5教程</a></li>
+<li class="li2"><a href="//www.w3cschool.cn/css/index.html" title="CSS教程">CSS教程</a></li>
+<li class="li2"><a href="//www.w3cschool.cn/css3/index.html" title="CSS3教程">CSS3教程</a></li>
+<li class="li2"><a href="//www.w3cschool.cn/bootstrap/index.html" title="bootstrap教程">bootstrap教程</a></li>
+<li class="li2"><a href="//www.w3cschool.cn/foundation/index.html" title="Foundation5 教程">Foundation5 教程</a></li>
+</ul>
+</li>
+<li class="li1">
+<a href="javascript:;">javascript</a>
+<ul class="nav2">
+<li class="li2"><a href="//www.w3cschool.cn/javascript/index.html" title="javascript教程">javascript教程</a></li>
+<li class="li2"><a href="//www.w3cschool.cn/htmldom/index.html" title="HTML DOM教程">HTML DOM教程</a></li>
+<li class="li2"><a href="//www.w3cschool.cn/jquery/index.html" title="jQuery教程">jQuery教程</a></li>
+<li class="li2"><a href="//www.w3cschool.cn/angularjs/index.html" title="AngularJS教程">AngularJS教程</a></li>
+<li class="li2"><a href="//www.w3cschool.cn/react/index.html" title="React 教程">React 教程</a></li>
+<li class="li2"><a href="//www.w3cschool.cn/jqueryui/index.html" title="jQuery UI教程">jQuery UI教程</a></li>
+<li class="li2"><a href="//www.w3cschool.cn/jqueryeasyui/index.html" title="jQuery EasyUI教程">jQuery EasyUI教程</a></li>
+<li class="li2"><a href="//www.w3cschool.cn/nodejs/index.html" title="Node.js教程">Node.js教程</a></li>
+<li class="li2"><a href="//www.w3cschool.cn/ajax/index.html" title="AJAX教程">AJAX教程</a></li>
+<li class="li2"><a href="//www.w3cschool.cn/json/index.html" title="JSON教程">JSON教程</a></li>
+<li class="li2"><a href="//www.w3cschool.cn/highcharts/index.html" title="Highcharts教程">Highcharts教程</a></li>
+<li class="li2"><a href="//www.w3cschool.cn/googleditu/index.html" title="Google地图教程">Google地图教程</a></li>
+</ul>
+</li>
+<li class="li1">
+<a href="javascript:;">服务端</a>
+<ul class="nav2">
+<li class="li2"><a href="//www.w3cschool.cn/php/index.html" title="PHP教程">PHP教程</a></li>
+<li class="li2"><a href="//www.w3cschool.cn/python/index.html" title="python基础教程">python基础教程</a></li>
+<li class="li2"><a href="//www.w3cschool.cn/python3/index.html" title="Python 3教程">Python 3教程</a></li>
+<li class="li2"><a href="//www.w3cschool.cn/django/index.html" title="Django教程">Django教程</a></li>
+<li class="li2"><a href="//www.w3cschool.cn/linux/index.html" title="Linux教程">Linux教程</a></li>
+<li class="li2"><a href="//www.w3cschool.cn/docker/index.html" title="Docker教程">Docker教程</a></li>
+<li class="li2"><a href="//www.w3cschool.cn/ruby/index.html" title="Ruby教程">Ruby教程</a></li>
+<li class="li2"><a href="//www.w3cschool.cn/java/index.html" title="Java教程">Java教程</a></li>
+<li class="li2"><a href="//www.w3cschool.cn/c/index.html" title="C教程">C教程</a></li>
+<li class="li2"><a href="//www.w3cschool.cn/cpp/index.html" title="C++教程">C++教程</a></li>
+<li class="li2"><a href="//www.w3cschool.cn/perl/index.html" title="Perl 教程">Perl 教程</a></li>
+<li class="li2"><a href="//www.w3cschool.cn/servlet/index.html" title="Servlet教程">Servlet教程</a></li>
+<li class="li2"><a href="//www.w3cschool.cn/jsp/index.html" title="JSP教程">JSP教程</a></li>
+<li class="li2"><a href="//www.w3cschool.cn/lua/index.html" title="Lua教程">Lua教程</a></li>
+<li class="li2"><a href="//www.w3cschool.cn/scala/index.html" title="scala教程">scala教程</a></li>
+<li class="li2"><a href="//www.w3cschool.cn/go/index.html" title="Go教程">Go教程</a></li>
+<li class="li2"><a href="//www.w3cschool.cn/shejimoshi/index.html" title="设计模式">设计模式</a></li>
+<li class="li2"><a href="//www.w3cschool.cn/zhengzebiaodashi/index.html" title="正则表达式">正则表达式</a></li>
+<li class="li2"><a href="//www.w3cschool.cn/asp/index.html" title="ASP教程">ASP教程</a></li>
+<li class="li2"><a href="//www.w3cschool.cn/appml/index.html" title="AppML教程">AppML教程</a></li>
+<li class="li2"><a href="//www.w3cschool.cn/vbscript/index.html" title="VBScript教程">VBScript教程</a></li>
+<li class="li2"><a href="//www.w3cschool.cn/wkspring/index.html" title="Spring 教程">Spring 教程</a></li>
+</ul>
+</li>
+<li class="li1">
+<a href="javascript:;">数据库</a>
+<ul class="nav2">
+<li class="li2"><a href="//www.w3cschool.cn/sql/index.html" title="SQL教程">SQL教程</a></li>
+<li class="li2"><a href="//www.w3cschool.cn/mysql/index.html" title="MySQL教程">MySQL教程</a></li>
+<li class="li2"><a href="//www.w3cschool.cn/sqlite/index.html" title="SQLite教程">SQLite教程</a></li>
+<li class="li2"><a href="//www.w3cschool.cn/mongodb/index.html" title="MongoDB教程">MongoDB教程</a></li>
+<li class="li2"><a href="//www.w3cschool.cn/redis/index.html" title="Redis教程">Redis教程</a></li>
+<li class="li2"><a href="//www.w3cschool.cn/memcached/index.html" title="Memcached教程">Memcached教程</a></li>
+</ul>
+</li>
+<li class="li1">
+<a href="javascript:;">移动端</a>
+<ul class="nav2">
+<li class="li2"><a href="//www.w3cschool.cn/android/index.html" title="Android教程">Android教程</a></li>
+<li class="li2"><a href="//www.w3cschool.cn/swift/index.html" title="Swift 教程">Swift 教程</a></li>
+<li class="li2"><a href="//www.w3cschool.cn/jquerymobile/index.html" title="jQuery Mobile教程">jQuery Mobile教程</a></li>
+<li class="li2"><a href="//www.w3cschool.cn/ionic/index.html" title="ionic">ionic</a></li>
+<li class="li2"><a href="//www.w3cschool.cn/ios/index.html" title="ios开发手册">ios开发手册</a></li>
+</ul>
+</li>
+<li class="li1">
+<a href="javascript:;">ASP.NET</a>
+<ul class="nav2">
+<li class="li2"><a href="//www.w3cschool.cn/aspnet/index.html" title="ASP.NET教程">ASP.NET教程</a></li>
+<li class="li2"><a href="//www.w3cschool.cn/csharp/index.html" title="C#教程">C#教程</a></li>
+</ul>
+</li>
+<li class="li1">
+<a href="javascript:;">Web Services</a>
+<ul class="nav2">
+<li class="li2"><a href="//www.w3cschool.cn/webservices/index.html" title="Web Services教程">Web Services教程</a></li>
+<li class="li2"><a href="//www.w3cschool.cn/wsdl/index.html" title="WSDL教程">WSDL教程</a></li>
+<li class="li2"><a href="//www.w3cschool.cn/soap/index.html" title="SOAP教程">SOAP教程</a></li>
+<li class="li2"><a href="//www.w3cschool.cn/rss/index.html" title="RSS教程">RSS教程</a></li>
+<li class="li2"><a href="//www.w3cschool.cn/rdf/index.html" title="RDF教程">RDF教程</a></li>
+</ul>
+</li>
+<li class="li1">
+<a href="javascript:;">开发工具</a>
+<ul class="nav2">
+<li class="li2"><a href="//www.w3cschool.cn/eclipse/index.html" title="Eclipse教程">Eclipse教程</a></li>
+<li class="li2"><a href="//www.w3cschool.cn/git/index.html" title="Git教程">Git教程</a></li>
+<li class="li2"><a href="//www.w3cschool.cn/firebug/index.html" title="Firebug教程">Firebug教程</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<!--siderbar_nav end--></div>
+</div>
+  </div>
+<div id="pro-footer">
+<div class="s-footer">
+<div class="s-footer-bottom">
+<p>Copyright &copy; 2016 <a href="//www.w3cschool.cn" title="w3cschool">w3cschool.cn </a> All Rights Reserved. </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="bottom-tools" style="bottom: 40px;">
+<a id="scrollUp" href="javascript:;" title="飞回顶部"></a>
+<a class="onlinenote" style="display: none;" title="在线笔记" href="javascript:;" data-module="page">在线笔记</a>
+<div class="qr-tool">二维码</div>
+<a id="feedback" class="webjy" title="建议反馈" href="javascript:;" data-module="page" onclick="showDialogBox(this)">建议反馈</a>    
+<div class="qr-img"><img src="//statics.w3cschool.cn/images/w3c/w3cschool.jpg" alt="二维码"></div>
+</div>
+
+<div class="feedback-Box" style="display: none;">
+<div class="feedback-Box-content" style="width: 800px;">
+<div class="feedback-Box-top">
+<span class="feedback-Box-title">意见反馈</span>
+<span onclick="closeDialogBox(this)" class="feedback-Box-close">X</span>
+</div>
+<ul>
+<li class="feedback-box" >
+<div id="feedbackRadio" type="radio" name="feedbackType" data-value="0" style=""> 意见反馈：</div>
+<textarea  name="reportInfo" id="elmaaa" class="feedback-text" rows="15" placeholder="请留下您宝贵的意见反馈吧。" style="width: 700px;height:200px;overflow:auto;" ></textarea>
+<p>联系方式：</p>
+<input type="text" placeholder="留个联系方式呗..." name="reportAddress" class="radio-text" id="reportAddress" style="height: 30px;width: 200px;">
+</li>
+</ul>
+<button class="search-s" onclick="dialogSubmit(this)" id="reportSubmit">提交</button>
+</div>
+</div>
+
+<div id="note-start" style="display: none"></div>
+
+<div id="detail" style="display:none;">
+<div id="note-Dialog" class="note-Dialog" >
+<div class="note-Box-content" >
+<div class="ntitlebox">
+<input type="text" placeholder="" name="ntitle" class="ntitle" id="ntitle" >
+</div>
+<div id="editorarea">
+<textarea  name="ncontent" id="ncontent" class="ncontent" rows="15" placeholder="" style="width: 700px;height:200px;overflow:auto;" ></textarea>
+</div>
+<p></p>
+<a class="closenote" href="/my/note" target="_blank" >查看完整版笔记</a>
+<button class="notesubmit"  id="notesubmit">保存</button>
+<button class="notebtn pull-right closenote" style="margin:20px 0" >关闭</button>
+</div>
+</div>
+</div>
+
+<div class="report-Box" style="display: none;">
+<div class="report-Box-content">
+<div class="report-Box-top">
+<span class="report-Box-title">违规举报</span>
+<span onclick="closeReportBox(this)" class="report-Box-close">X</span>
+</div>
+<ul>
+<li class="radio-box">
+<input id="reportRadio" type="radio" name="reportType" value="1" checked="checked" /> 广告等垃圾信息
+</li>
+<li class="radio-box">
+<input id="reportRadio" type="radio" name="reportType" value="2" /> 不友善内容
+</li>
+<li class="radio-box">
+<input id="reportRadio" type="radio" name="reportType" value="3" /> 违反法律法规的内容
+</li>
+<li class="radio-box">
+<input id="reportRadio" type="radio" name="reportType" value="4" /> 不宜公开讨论的政治内容
+</li>
+<li class="radio-box" onclick="reportOther(this)">
+<input id="reportRadio" type="radio" name="reportType" value="0" /> 其他
+<input type="text" class="radio-text" name="reportInfo" value="" placeholder="请填写您的举报理由。">
+</li>
+</ul>
+<button class="search-s" onclick="reportSubmit(this)" id="reportSubmit">提交</button>
+</div>
+</div>
+<div class="widget-body" data-type="project"></div>
+<div class="pay-area" data-static="//www.w3cschool.cn/statics"></div>
+<div class="dialog-area"></div>
+<script src="//www.w3cschool.cn/plugins/ueditor/third-party/SyntaxHighlighter/shCore.js" type="text/javascript"></script>
+<script src="//www.w3cschool.cn/statics/js/commonfooter.js" type="text/javascript"></script>
+<script src="//www.w3cschool.cn/statics/js/project.view.js" type="text/javascript"></script>
+<script src="//www.w3cschool.cn/statics/core/ajaxdo.core.js" type="text/javascript"></script>
+<script>
+var kn = {
+kename:'',
+pename:'html',
+ismenu:'',
+ktitle:'',
+ktype:'',
+uid:'0',
+};
+var book = {
+pename:'html',
+}
+function isProjectLike(){
+
+if(kn.uid == '' || kn.uid == '0'){
+toastr.warning("您还未登录,请先登录!",'',{"positionClass": "toast-top-center"});
+return;
+}
+$.ajaxdo({
+url: "/project/islike/html.html",
+type: "post",
+dataType: 'json',
+data: {},
+sync: false,
+success: function (data) {
+if (data.statusCode == 200) {
+$('.avatar-list').find('p').remove();
+$('.avatar-list').append('<a href="/u/' + data.data + '" title="' + data.data + '"><img src="/attachments/avatar/avatar_' + data.data + '.jpg" title=""></a>');
+var likecount = $("#likecount").text() * 1 + 1;
+$("#likecount").html(likecount);
+$(".btn-thumbs-up i").attr('class','icon-thumbs-up isdone');
+$("#likestatus").html('已赞');
+toastr.success(data.message,'',{"positionClass": "toast-top-center"});
+} else {
+toastr.warning(data.message,'',{"positionClass": "toast-top-center"});
+}
+}
+});
+}
+function isProjectStar(){
+if(kn.uid == '' || kn.uid == '0'){
+toastr.warning("您还未登录,请先登录!",'',{"positionClass": "toast-top-center"});
+return;
+}
+var type = $('#hbstar').attr('data-type');
+$.ajaxdo({
+url: "/project/star/html.html",
+type: "post",
+dataType: 'json',
+data: {},
+success: function (data) {
+if(data.statusCode == 200){
+if (type == 'star') {
+$('#hbstar').html('<i class="icon-star isdone"></i><span>已收藏</span>');
+$('#hbstar').attr('data-type','rstar');
+toastr.success(data.message,'',{"positionClass": "toast-top-center"});
+} else {
+$('#hbstar').html('<i class="icon-star"></i><span>收藏</span>');
+$('#hbstar').attr('data-type','star');
+toastr.success(data.message,'',{"positionClass": "toast-top-center"});
+}
+}else{
+toastr.warning(data.message,'',{"positionClass": "toast-top-center"});
+}
+}
+});
+}
+$(function(){
+$(document).on("click",function(){
+$(".docblur").hide();
+});
+
+$(".onlinenote").show();
+
+if(location.hash !== ""){ // 修复锚点定位失效的问题
+setTimeout(function(){
+location.href=location.hash;
+},300);
+}
+var kename = kn.kename;
+var fid    = "";
+var uid = '0';
+$(document).on('keyup',function(e){
+var keyCode = e.keyCode;
+var prev,next;
+if(keyCode == 37){ // 上一篇
+prev = $(".navigation-prev");
+if(prev.length > 0 && !prev.is(":hidden")){
+location.href = prev.attr("href");
+}
+}
+if(keyCode == 39){ // 下一篇
+next = $(".navigation-next");
+if(next.length > 0 && !next.is(":hidden")){
+location.href = next.attr("href");
+}
+}
+});
+/*开启计时 准备记录积分*/
+var vcreditfull = $.cookie('ypre_vcreditfull');
+//console.log(vcreditfull);
+if(vcreditfull == undefined && uid != '0' && uid != ''){
+setTimeout(function(){
+$.ajax({
+url:"/project/setViewCredit",
+type:"post",
+data:{kename:kename},
+dataType:"json",
+success:function(msg){
+var statusCode = {
+'200':'success',
+'400':'warning',
+};
+var toastrType = statusCode[msg.statusCode];
+if(msg.statusCode == 300 || msg.statusCode == 400){
+return;
+}
+toastr[toastrType](msg.message);
+}
+});
+},30000);
+}
+hljs.initHighlightingOnLoad();//高亮代码
+window._bd_share_config={"common":{"bdSnsKey":{},bdPopupOffsetTop:"5"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='/plugins/baidushare/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+});
+$(".toggle-dropdown").on('click',function(e){
+e.stopPropagation();
+if ($(this).next().is(":hidden")){
+$(this).next().show();    
+}else{
+$(this).next().hide();     
+}
+});
+
+$(".set-dropdown-menu").on("click",function(e){
+e.stopPropagation();
+});
+function getviewkn(){
+var usernamestr ='';
+$.ajax({
+url:"/my/knowledge/getViewkn?pename="+book.pename,
+dataType:"json",
+success:function(msg){
+var objli,objtt;
+for(var p in msg){
+objli = $("#nestable_handbook").find(".dd-item[data-id='"+msg[p]['kename']+"']");
+if(objli.attr("ismenu") != 1){
+objli.addClass("readed").find("a").attr("title","上次浏览时间:("+msg[p]['lasttime']+")");
+}
+}
+}
+}); 
+}
+</script>
+</body>
+</html>
